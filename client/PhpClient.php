@@ -7,7 +7,7 @@ require_once __DIR__.'/../lib/php/Thrift/ClassLoader/ThriftClassLoader.php';
 
 use Thrift\ClassLoader\ThriftClassLoader;
 
-$GEN_DIR = realpath(dirname(__FILE__).'/..').'/../gen-php';
+$GEN_DIR = realpath(dirname(__FILE__).'/..').'/gen-php';
 
 $loader = new ThriftClassLoader();
 $loader->registerNamespace('Thrift', __DIR__ . '/../lib/php');
@@ -42,7 +42,7 @@ use Thrift\Exception\TException;
 
 try {
     if (array_search('--http', $argv)) {
-        $socket = new THttpClient('localhost', 8080, '/PhpServer2.php');
+        $socket = new THttpClient('localhost', 8080, '/../server/PhpServer.php');
     } else {
         $socket = new TSocket('localhost', 9090);
     }

@@ -20,7 +20,7 @@
 #
 
 import sys, glob
-sys.path.append('../gen-py')
+sys.path.append('gen-py')
 
 from tutorial import Calculator
 from tutorial.ttypes import *

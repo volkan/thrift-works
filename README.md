@@ -2,8 +2,8 @@
 thrift-works
 
 ```
-thrift -r --gen php tutorial.thrift
-thrift -r --gen php shared.thrift
+thrift -r --gen php:server tutorial.thrift
+thrift -r --gen php:server shared.thrift
 ```
 
 ```
