@@ -12,6 +12,17 @@ thrift -r --gen py shared.thrift
 ```
 
 ```
+pip install thrift
+```
+
+or
+
+```
+cd lib/py
+python setup.py install
+```
+
+```
 python server/PythonServer.py
 php client/PhpClient.php
 ```
